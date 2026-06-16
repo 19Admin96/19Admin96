@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 416" width="100%" fill="none">
+<defs>
+  <filter id="g" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#39ff14" stop-opacity="0"/><stop offset="50%" stop-color="#39ff14" stop-opacity="0.18"/><stop offset="100%" stop-color="#39ff14" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<g>
+  <g>
+      <polygon points="236.0,28.0 286.2,57.0 286.2,115.0 236.0,144.0 185.8,115.0 185.8,57.0" fill="#0c130c" fill-opacity="0.72" stroke="#00ff41" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.2s" begin="-0.00s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="236.0,33.0 281.9,59.5 281.9,112.5 236.0,139.0 190.1,112.5 190.1,59.5" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.25"/>
+      <g transform="translate(236.0,74)" filter="url(#g)"><path d="M-7,-7 L-15,0 L-7,7 M7,-7 L15,0 L7,7 M-2,9 L3,-9" stroke="#00ff41" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <text x="236.0" y="112" text-anchor="middle" fill="#00ff41" font="700 13px monospace" style="font:700 13px monospace; letter-spacing:1px;">React</text>
+    </g><g>
+      <polygon points="368.0,28.0 418.2,57.0 418.2,115.0 368.0,144.0 317.8,115.0 317.8,57.0" fill="#0c130c" fill-opacity="0.72" stroke="#00ff41" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.2s" begin="-0.18s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="368.0,33.0 413.9,59.5 413.9,112.5 368.0,139.0 322.1,112.5 322.1,59.5" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.25"/>
+      <g transform="translate(368.0,74)" filter="url(#g)"><path d="M-9,-13 L5,-13 L11,-7 L11,13 L-9,13 Z M5,-13 L5,-7 L11,-7" stroke="#00ff41" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <text x="368.0" y="112" text-anchor="middle" fill="#00ff41" font="700 13px monospace" style="font:700 13px monospace; letter-spacing:1px;">TypeScript</text>
+    </g><g>
+      <polygon points="500.0,28.0 550.2,57.0 550.2,115.0 500.0,144.0 449.8,115.0 449.8,57.0" fill="#0c130c" fill-opacity="0.72" stroke="#00ff41" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.2s" begin="-0.36s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="500.0,33.0 545.9,59.5 545.9,112.5 500.0,139.0 454.1,112.5 454.1,59.5" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.25"/>
+      <g transform="translate(500.0,74)" filter="url(#g)"><rect x="-15" y="-11" width="30" height="22" rx="3" stroke="#00ff41" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M-9,-3 L-3,1 L-9,5 M1,6 L9,6" stroke="#00ff41" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <text x="500.0" y="112" text-anchor="middle" fill="#00ff41" font="700 13px monospace" style="font:700 13px monospace; letter-spacing:1px;">JavaScript</text>
+    </g><g>
+      <polygon points="632.0,28.0 682.2,57.0 682.2,115.0 632.0,144.0 581.8,115.0 581.8,57.0" fill="#0c130c" fill-opacity="0.72" stroke="#ff3df5" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.2s" begin="-0.54s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="632.0,33.0 677.9,59.5 677.9,112.5 632.0,139.0 586.1,112.5 586.1,59.5" fill="none" stroke="#ff3df5" stroke-width="0.8" opacity="0.25"/>
+      <g transform="translate(632.0,74)" filter="url(#g)"><path d="M-4,-4 L4,-4 L4,4 L-4,4 Z M-4,-4 A5,5 0 1 1 -9,-9 L-4,-4 M4,-4 A5,5 0 1 1 9,-9 L4,-4 M4,4 A5,5 0 1 1 9,9 L4,4 M-4,4 A5,5 0 1 1 -9,9 L-4,4" stroke="#ff3df5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <text x="632.0" y="112" text-anchor="middle" fill="#ff3df5" font="700 13px monospace" style="font:700 13px monospace; letter-spacing:1px;">Redux</text>
+    </g><g>
+      <polygon points="764.0,28.0 814.2,57.0 814.2,115.0 764.0,144.0 713.8,115.0 713.8,57.0" fill="#0c130c" fill-opacity="0.72" stroke="#00ff41" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.2s" begin="-0.72s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="764.0,33.0 809.9,59.5 809.9,112.5 764.0,139.0 718.1,112.5 718.1,59.5" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.25"/>
+      <g transform="translate(764.0,74)" filter="url(#g)"><rect x="-13" y="-13" width="11" height="11" rx="2" stroke="#00ff41" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="-13" width="11" height="11" rx="2" stroke="#00ff41" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="-13" y="2" width="11" height="11" rx="2" stroke="#00ff41" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="2" width="11" height="11" rx="2" stroke="#00ff41" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <text x="764.0" y="112" text-anchor="middle" fill="#00ff41" font="700 13px monospace" style="font:700 13px monospace; letter-spacing:1px;">Tailwind</text>
+    </g><g>
+      <polygon points="302.0,146.0 352.2,175.0 352.2,233.0 302.0,262.0 251.8,233.0 251.8,175.0" fill="#0c130c" fill-opacity="0.72" stroke="#ffd43b" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.2s" begin="-0.90s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="302.0,151.0 347.9,177.5 347.9,230.5 302.0,257.0 256.1,230.5 256.1,177.5" fill="none" stroke="#ffd43b" stroke-width="0.8" opacity="0.25"/>
+      <g transform="translate(302.0,192)" filter="url(#g)"><rect x="-9" y="-14" width="18" height="28" rx="3" stroke="#ffd43b" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="-3" y1="9" x2="3" y2="9" stroke="#ffd43b" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <text x="302.0" y="230" text-anchor="middle" fill="#ffd43b" font="700 13px monospace" style="font:700 13px monospace; letter-spacing:1px;">Ionic</text>
+    </g><g>
+      <polygon points="434.0,146.0 484.2,175.0 484.2,233.0 434.0,262.0 383.8,233.0 383.8,175.0" fill="#0c130c" fill-opacity="0.72" stroke="#ffd43b" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.2s" begin="-1.08s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="434.0,151.0 479.9,177.5 479.9,230.5 434.0,257.0 388.1,230.5 388.1,177.5" fill="none" stroke="#ffd43b" stroke-width="0.8" opacity="0.25"/>
+      <g transform="translate(434.0,192)" filter="url(#g)"><path d="M0,-13 L12,-6 L12,8 L0,15 L-12,8 L-12,-6 Z M0,-13 L0,1 M0,1 L12,-6 M0,1 L-12,-6" stroke="#ffd43b" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <text x="434.0" y="230" text-anchor="middle" fill="#ffd43b" font="700 13px monospace" style="font:700 13px monospace; letter-spacing:1px;">Capacitor</text>
+    </g><g>
+      <polygon points="566.0,146.0 616.2,175.0 616.2,233.0 566.0,262.0 515.8,233.0 515.8,175.0" fill="#0c130c" fill-opacity="0.72" stroke="#ffd43b" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.2s" begin="-1.26s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="566.0,151.0 611.9,177.5 611.9,230.5 566.0,257.0 520.1,230.5 520.1,177.5" fill="none" stroke="#ffd43b" stroke-width="0.8" opacity="0.25"/>
+      <g transform="translate(566.0,192)" filter="url(#g)"><rect x="-9" y="-14" width="18" height="28" rx="3" stroke="#ffd43b" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="-3" y1="9" x2="3" y2="9" stroke="#ffd43b" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <text x="566.0" y="230" text-anchor="middle" fill="#ffd43b" font="700 13px monospace" style="font:700 13px monospace; letter-spacing:1px;">React Native</text>
+    </g><g>
+      <polygon points="698.0,146.0 748.2,175.0 748.2,233.0 698.0,262.0 647.8,233.0 647.8,175.0" fill="#0c130c" fill-opacity="0.72" stroke="#ff9b2f" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.2s" begin="-1.44s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="698.0,151.0 743.9,177.5 743.9,230.5 698.0,257.0 652.1,230.5 652.1,177.5" fill="none" stroke="#ff9b2f" stroke-width="0.8" opacity="0.25"/>
+      <g transform="translate(698.0,192)" filter="url(#g)"><rect x="-10" y="-10" width="20" height="20" rx="2" stroke="#ff9b2f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="-4" y="-4" width="8" height="8" rx="1" stroke="#ff9b2f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M-5,-10 V-15 M5,-10 V-15 M-5,10 V15 M5,10 V15 M-10,-5 H-15 M-10,5 H-15 M10,-5 H15 M10,5 H15" stroke="#ff9b2f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <text x="698.0" y="230" text-anchor="middle" fill="#ff9b2f" font="700 13px monospace" style="font:700 13px monospace; letter-spacing:1px;">Tauri</text>
+    </g><g>
+      <polygon points="302.0,264.0 352.2,293.0 352.2,351.0 302.0,380.0 251.8,351.0 251.8,293.0" fill="#0c130c" fill-opacity="0.72" stroke="#00ff41" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.2s" begin="-1.62s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="302.0,269.0 347.9,295.5 347.9,348.5 302.0,375.0 256.1,348.5 256.1,295.5" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.25"/>
+      <g transform="translate(302.0,310)" filter="url(#g)"><rect x="-13" y="-13" width="26" height="11" rx="2" stroke="#00ff41" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="-13" y="2" width="26" height="11" rx="2" stroke="#00ff41" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="-8" cy="-7.5" r="1.4" fill="#00ff41" stroke="none"/><circle cx="-8" cy="7.5" r="1.4" fill="#00ff41" stroke="none"/></g>
+      <text x="302.0" y="348" text-anchor="middle" fill="#00ff41" font="700 13px monospace" style="font:700 13px monospace; letter-spacing:1px;">Node.js</text>
+    </g><g>
+      <polygon points="434.0,264.0 484.2,293.0 484.2,351.0 434.0,380.0 383.8,351.0 383.8,293.0" fill="#0c130c" fill-opacity="0.72" stroke="#33d6ff" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.2s" begin="-1.80s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="434.0,269.0 479.9,295.5 479.9,348.5 434.0,375.0 388.1,348.5 388.1,295.5" fill="none" stroke="#33d6ff" stroke-width="0.8" opacity="0.25"/>
+      <g transform="translate(434.0,310)" filter="url(#g)"><path d="M-9,7 A7,7 0 0 1 -8,-6 A8,8 0 0 1 7,-4 A6,6 0 0 1 8,7 Z" stroke="#33d6ff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <text x="434.0" y="348" text-anchor="middle" fill="#33d6ff" font="700 13px monospace" style="font:700 13px monospace; letter-spacing:1px;">Firebase</text>
+    </g><g>
+      <polygon points="566.0,264.0 616.2,293.0 616.2,351.0 566.0,380.0 515.8,351.0 515.8,293.0" fill="#0c130c" fill-opacity="0.72" stroke="#00ff41" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.2s" begin="-1.98s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="566.0,269.0 611.9,295.5 611.9,348.5 566.0,375.0 520.1,348.5 520.1,295.5" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.25"/>
+      <g transform="translate(566.0,310)" filter="url(#g)"><ellipse cx="0" cy="-9" rx="12" ry="4.5" stroke="#00ff41" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M-12,-9 V9 A12,4.5 0 0 0 12,9 V-9 M-12,0 A12,4.5 0 0 0 12,0" stroke="#00ff41" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <text x="566.0" y="348" text-anchor="middle" fill="#00ff41" font="700 13px monospace" style="font:700 13px monospace; letter-spacing:1px;">MongoDB</text>
+    </g><g>
+      <polygon points="698.0,264.0 748.2,293.0 748.2,351.0 698.0,380.0 647.8,351.0 647.8,293.0" fill="#0c130c" fill-opacity="0.72" stroke="#ff3df5" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.2s" begin="-2.16s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="698.0,269.0 743.9,295.5 743.9,348.5 698.0,375.0 652.1,348.5 652.1,295.5" fill="none" stroke="#ff3df5" stroke-width="0.8" opacity="0.25"/>
+      <g transform="translate(698.0,310)" filter="url(#g)"><circle cx="-8" cy="-9" r="3.5" stroke="#ff3df5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="-8" cy="9" r="3.5" stroke="#ff3df5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="-3" r="3.5" stroke="#ff3df5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M-8,-5 V5 M-8,-6 A11,11 0 0 0 5,-3" stroke="#ff3df5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <text x="698.0" y="348" text-anchor="middle" fill="#ff3df5" font="700 13px monospace" style="font:700 13px monospace; letter-spacing:1px;">Git</text>
+    </g>
+  <rect x="0" y="0" width="1000" height="70" fill="url(#scan)">
+    <animate attributeName="y" values="-70;416" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+</g>
+</svg>

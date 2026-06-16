@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 308" width="100%" fill="none">
+<defs>
+  <clipPath id="cl0"><rect x="26" y="42" height="26" width="0">
+      <animate attributeName="width" values="0;0;101;101;101" keyTimes="0;0.031;0.085;0.985;1" dur="13.0s" repeatCount="indefinite"/>
+    </rect></clipPath><clipPath id="cl1"><rect x="26" y="68" height="26" width="0">
+      <animate attributeName="width" values="0;0;437;437;437" keyTimes="0;0.112;0.165;0.985;1" dur="13.0s" repeatCount="indefinite"/>
+    </rect></clipPath><clipPath id="cl2"><rect x="26" y="94" height="26" width="0">
+      <animate attributeName="width" values="0;0;178;178;178" keyTimes="0;0.192;0.246;0.985;1" dur="13.0s" repeatCount="indefinite"/>
+    </rect></clipPath><clipPath id="cl3"><rect x="26" y="120" height="26" width="0">
+      <animate attributeName="width" values="0;0;504;504;504" keyTimes="0;0.273;0.327;0.985;1" dur="13.0s" repeatCount="indefinite"/>
+    </rect></clipPath><clipPath id="cl4"><rect x="26" y="146" height="26" width="0">
+      <animate attributeName="width" values="0;0;456;456;456" keyTimes="0;0.354;0.408;0.985;1" dur="13.0s" repeatCount="indefinite"/>
+    </rect></clipPath><clipPath id="cl5"><rect x="26" y="172" height="26" width="0">
+      <animate attributeName="width" values="0;0;197;197;197" keyTimes="0;0.435;0.488;0.985;1" dur="13.0s" repeatCount="indefinite"/>
+    </rect></clipPath><clipPath id="cl6"><rect x="26" y="198" height="26" width="0">
+      <animate attributeName="width" values="0;0;523;523;523" keyTimes="0;0.515;0.569;0.985;1" dur="13.0s" repeatCount="indefinite"/>
+    </rect></clipPath><clipPath id="cl7"><rect x="26" y="224" height="26" width="0">
+      <animate attributeName="width" values="0;0;197;197;197" keyTimes="0;0.596;0.650;0.985;1" dur="13.0s" repeatCount="indefinite"/>
+    </rect></clipPath><clipPath id="cl8"><rect x="26" y="250" height="26" width="0">
+      <animate attributeName="width" values="0;0;379;379;379" keyTimes="0;0.677;0.731;0.985;1" dur="13.0s" repeatCount="indefinite"/>
+    </rect></clipPath>
+  <linearGradient id="tb" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0e1a0e"/><stop offset="100%" stop-color="#081008"/></linearGradient>
+</defs>
+<rect x="1" y="1" width="998" height="306" rx="12" fill="#060d06" stroke="#00ff41" stroke-width="1.4" stroke-opacity="0.55"/>
+<rect x="1" y="1" width="998" height="38" rx="12" fill="url(#tb)"/>
+<rect x="1" y="26" width="998" height="12" fill="url(#tb)"/>
+<line x1="1" y1="38" x2="999" y2="38" stroke="#00ff41" stroke-width="1" stroke-opacity="0.4"/>
+<circle cx="22" cy="19.0" r="5" fill="#ff5f56"/><circle cx="42" cy="19.0" r="5" fill="#ffbd2e"/><circle cx="62" cy="19.0" r="5" fill="#27c93f"/>
+<text x="500.0" y="23.0" text-anchor="middle" fill="#3f8f55" style="font:600 13px monospace; letter-spacing:1px;">zerratun@dev: ~/profile</text>
+<g clip-path="url(#cl0)">
+      <text x="26" y="58" style="font:600 16px 'Courier New',monospace;"><tspan fill="#3f8f55">$</tspan> <tspan fill="#eafff0">whoami</tspan></text>
+    </g><g clip-path="url(#cl1)">
+      <text x="26" y="84" style="font:600 16px 'Courier New',monospace;"><tspan fill="#00ff41">&gt;</tspan> <tspan fill="#00ff41">Mekan Hydyrov  —  Cross-Platform Engineer</tspan></text>
+    </g><g clip-path="url(#cl2)">
+      <text x="26" y="110" style="font:600 16px 'Courier New',monospace;"><tspan fill="#3f8f55">$</tspan> <tspan fill="#eafff0">cat stack.json</tspan></text>
+    </g><g clip-path="url(#cl3)">
+      <text x="26" y="136" style="font:600 16px 'Courier New',monospace;"><tspan fill="#00ff41">&gt;</tspan> <tspan fill="#39ff14">web      : React · TypeScript · Redux · Tailwind</tspan></text>
+    </g><g clip-path="url(#cl4)">
+      <text x="26" y="162" style="font:600 16px 'Courier New',monospace;"><tspan fill="#00ff41">&gt;</tspan> <tspan fill="#39ff14">mobile   : Ionic · Capacitor · React Native</tspan></text>
+    </g><g clip-path="url(#cl5)">
+      <text x="26" y="188" style="font:600 16px 'Courier New',monospace;"><tspan fill="#00ff41">&gt;</tspan> <tspan fill="#39ff14">desktop  : Tauri</tspan></text>
+    </g><g clip-path="url(#cl6)">
+      <text x="26" y="214" style="font:600 16px 'Courier New',monospace;"><tspan fill="#00ff41">&gt;</tspan> <tspan fill="#39ff14">backend  : Node.js · Firebase · MongoDB · REST API</tspan></text>
+    </g><g clip-path="url(#cl7)">
+      <text x="26" y="240" style="font:600 16px 'Courier New',monospace;"><tspan fill="#3f8f55">$</tspan> <tspan fill="#eafff0">echo $PHILOSOPHY</tspan></text>
+    </g><g clip-path="url(#cl8)">
+      <text x="26" y="266" style="font:600 16px 'Courier New',monospace;"><tspan fill="#00ff41">&gt;</tspan> <tspan fill="#ffd43b">"One codebase  ->  every platform."</tspan></text>
+    </g>
+<rect width="10" height="17" fill="#00ff41">
+  <animate attributeName="x" values="30;107;30;443;30;184;30;510;30;462;30;203;30;529;30;203;30;385;385" keyTimes="0.031;0.085;0.112;0.165;0.192;0.246;0.273;0.327;0.354;0.408;0.435;0.488;0.515;0.569;0.596;0.650;0.677;0.731;1" dur="13.0s" repeatCount="indefinite"/>
+  <animate attributeName="y" values="45;45;71;71;97;97;123;123;149;149;175;175;201;201;227;227;253;253;253" keyTimes="0.031;0.085;0.112;0.165;0.192;0.246;0.273;0.327;0.354;0.408;0.435;0.488;0.515;0.569;0.596;0.650;0.677;0.731;1" dur="13.0s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="1;0;1;0;1;0;1;0;1;0;1;0;1" dur="13.0s" repeatCount="indefinite"/>
+</rect>
+</svg>
