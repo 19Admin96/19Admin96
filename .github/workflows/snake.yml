@@ -1,9 +1,8 @@
-# Place this file at: .github/workflows/snake.yml
-name: Generate Snake
+name: Build profile
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # every 12 hours
+    - cron: "0 */6 * * *"   # every 6 hours
   workflow_dispatch:          # manual run button
   push:
     branches: [ main ]
@@ -12,17 +11,31 @@ permissions:
   contents: write
 
 jobs:
-  snake:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate snake SVG
+      - uses: actions/checkout@v4
+
+      - name: Export brand icons
+        run: |
+          npm install --no-save --silent simple-icons@16.34.0
+          node -e "const s=require('simple-icons');const o={};for(const k of ['react','typescript','redux','tailwindcss','ionic','capacitor','tauri','nodedotjs','firebase','mongodb','git','pwa','vercel','telegram','gmail','github']){const i=s['si'+k[0].toUpperCase()+k.slice(1)];o[k]={hex:i.hex,path:i.path}}require('fs').writeFileSync('scripts/icons.json',JSON.stringify(o))"
+
+      - name: Build cards
+        run: python3 scripts/build_profile.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+          OUT_DIR: dist
+
+      - name: Generate snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake-dark.svg?palette=github-dark&color_snake=39ff14&color_dots=163d1d,1f7a33,2faa45,57d967,39ff14
+            dist/snake-dark.svg?palette=github-dark&color_snake=a3e635&color_dots=0d1a13,14532d,15803d,22c55e,a3e635
 
-      - name: Push to output branch
+      - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
