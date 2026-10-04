@@ -16,9 +16,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install fonts & tools
+        run: pip install --quiet fonttools brotli
+
       - name: Export brand icons
         run: |
-          npm install --no-save --silent simple-icons@16.34.0
+          npm install --no-save --silent simple-icons@16.34.0 @fontsource/unbounded@5.3.0 @fontsource/geist-sans@5.3.0 @fontsource/geist-mono@5.3.0
           node -e "const s=require('simple-icons');const o={};for(const k of ['react','typescript','redux','tailwindcss','ionic','capacitor','tauri','nodedotjs','firebase','mongodb','git','pwa','vercel','telegram','gmail','github']){const i=s['si'+k[0].toUpperCase()+k.slice(1)];o[k]={hex:i.hex,path:i.path}}require('fs').writeFileSync('scripts/icons.json',JSON.stringify(o))"
 
       - name: Build cards
