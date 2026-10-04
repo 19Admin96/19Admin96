@@ -112,10 +112,10 @@ def hero():
         x += w + 8
     body = (f'<g clip-path="url(#hc)"><rect width="{W}" height="{H}" fill="{BG}"/>{blobs}'
             f'<rect width="{W}" height="{H}" fill="{BG}" opacity=".4"/><rect width="{W}" height="{H}" fill="url(#dots)"/>'
-            '<rect x="56" y="62" width="246" height="32" rx="16" fill="#ffffff" fill-opacity=".06" stroke="#fff" stroke-opacity=".14"/>'
+            '<rect x="56" y="62" width="316" height="32" rx="16" fill="#ffffff" fill-opacity=".06" stroke="#fff" stroke-opacity=".14"/>'
             f'<circle cx="74" cy="78" r="4" fill="{P}"><animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/></circle>'
-            f'<text x="86" y="83" fill="{TXT}" style="font:600 13px {SANS};letter-spacing:.5px">ZERRATUN · available for work</text>'
-            f'<text x="54" y="160" fill="url(#tw)" style="font:800 60px {SANS};letter-spacing:-2px">Mekan Hydyrov</text>'
+            f'<text x="86" y="83" fill="{TXT}" style="font:600 13px {SANS};letter-spacing:.5px">Available for freelance &amp; collaboration</text>'
+            f'<text x="54" y="160" fill="url(#tw)" style="font:800 64px {SANS};letter-spacing:2px">ZERRATUN</text>'
             f'<text x="56" y="208" fill="url(#g)" style="font:700 28px {SANS};letter-spacing:-.5px">Built in Turkmenistan.</text>'
             f'<text x="56" y="244" fill="url(#g)" style="font:700 28px {SANS};letter-spacing:-.5px">Made for every platform.</text>'
             f'<text x="56" y="286" fill="{MUT}" style="font:500 16px {SANS}">Cross-platform engineer · React · Ionic · Tauri</text>'
