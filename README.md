@@ -1,62 +1,27 @@
-<div align="center">
+<a href="https://zerratun.netlify.app">
+  <img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/hero.svg" width="100%" alt="Mekan Hydyrov — ZERRATUN · Built in Turkmenistan. Made for every platform." />
+</a>
 
-![ZERRATUN](./zerratun-banner.svg)
+<img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/h-about.svg" width="100%" alt="About" />
+<img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/about.svg" width="100%" alt="Cross-platform engineer from Mary, Turkmenistan — HR platforms, POS systems and everyday apps from one TypeScript codebase." />
 
-</div>
+<img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/h-stack.svg" width="100%" alt="Tech stack" />
+<img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/stack.svg" width="100%" alt="React · TypeScript · Redux · Tailwind · Ionic · Capacitor · React Native · Tauri · Node.js · Firebase · MongoDB · Git" />
 
-## `<Skills />`
+<img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/h-stats.svg" width="100%" alt="GitHub stats" />
+<img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/stats.svg" width="100%" alt="GitHub stats" />
+<img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/activity.svg" width="100%" alt="Contribution activity" />
 
-<div align="center">
+<img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/h-work.svg" width="100%" alt="Featured work" />
+<a href="https://github.com/19Admin96/MeteoMax">
+  <img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/project.svg" width="100%" alt="MeteoMax — cross-platform weather app (React + Ionic + Capacitor)" />
+</a>
 
-![Skills](./skills.svg)
-
-</div>
-
-## `<About />`
-
-<div align="center">
-
-![About](./about.svg)
-
-</div>
-
-## `<Stats />`
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=19Admin96&show_icons=true&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=c9d1d9&border_color=0a3d0a" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=19Admin96&layout=compact&hide_border=true&bg_color=0D1117&title_color=00FF41&text_color=c9d1d9&border_color=0a3d0a" />
-
-<br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=19Admin96&theme=matrix&no-frame=true&no-bg=true&margin-w=4&column=7" />
-
-</div>
-
-### ⛬ Contribution snake
-<div align="center">
-
-![snake](https://raw.githubusercontent.com/19Admin96/19Admin96/output/snake-dark.svg)
-
-</div>
-
-### ⛬ Activity graph
-<div align="center">
-
-[![graph](https://github-readme-activity-graph.vercel.app/graph?username=19Admin96&bg_color=0D1117&color=00ff41&line=00ff41&point=ffffff&area=true&hide_border=true)](https://github.com/19Admin96)
-
-</div>
-
-## `<Contact />`
-
-<div align="center">
-
-[![Portfolio](https://img.shields.io/badge/ZERRATUN_Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=00FF41&labelColor=0D1117)](https://your-portfolio-url.com)
-[![Email](https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=00FF41&labelColor=0D1117)](mailto:19mekan96tm@gmail.com)
-[![Telegram](https://img.shields.io/badge/Telegram-0D1117?style=for-the-badge&logo=telegram&logoColor=00FF41&labelColor=0D1117)](https://t.me/YOUR_HANDLE)
-
-<img src="https://komarev.com/ghpvc/?username=19Admin96&color=00ff41&style=flat-square&label=VISITORS" />
-
-</div>
-
-![footer](./footer.svg)
+<img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/h-contact.svg" width="100%" alt="Get in touch" />
+<p align="center">
+  <a href="https://zerratun.netlify.app"><img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/btn-portfolio.svg" width="190" alt="Portfolio" /></a>
+  <a href="https://t.me/hydyrovv96tm"><img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/btn-telegram.svg" width="190" alt="Telegram" /></a>
+  <a href="mailto:19mekan96tm@gmail.com"><img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/btn-email.svg" width="190" alt="Email" /></a>
+  <a href="https://github.com/19Admin96"><img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/btn-github.svg" width="190" alt="GitHub" /></a>
+</p>
+<img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/contact-footer.svg" width="100%" alt="Let's build something together." />
