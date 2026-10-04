@@ -21,7 +21,7 @@
 <p align="center">
   <a href="https://zerratun.netlify.app"><img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/btn-portfolio.svg" width="190" alt="Portfolio" /></a>
   <a href="https://t.me/hydyrovv96tm"><img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/btn-telegram.svg" width="190" alt="Telegram" /></a>
-  <a href="mailto:19mekan96tm@gmail.com"><img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/btn-email.svg" width="190" alt="Email" /></a>
+  <a href="mailto:hydyrovv96tm@gmail.com"><img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/btn-email.svg" width="190" alt="Email" /></a>
   <a href="https://github.com/19Admin96"><img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/btn-github.svg" width="190" alt="GitHub" /></a>
 </p>
 <img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/contact-footer.svg" width="100%" alt="Let's build something together." />
