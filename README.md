@@ -1,5 +1,5 @@
 <a href="https://zerratun.netlify.app">
-  <img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/hero.svg" width="100%" alt="Mekan Hydyrov — ZERRATUN · Built in Turkmenistan. Made for every platform." />
+  <img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/hero.svg" width="100%" alt="ZERRATUN · Built in Turkmenistan. Made for every platform." />
 </a>
 
 <img src="https://raw.githubusercontent.com/19Admin96/19Admin96/output/h-about.svg" width="100%" alt="About" />
