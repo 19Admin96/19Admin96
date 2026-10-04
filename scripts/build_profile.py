@@ -21,8 +21,11 @@ ICONS = json.load(open(os.path.join(HERE, 'icons.json'), encoding='utf-8'))
 
 # ── palette ────────────────────────────────────────────────────────────
 I = '#10b981'; V = '#22c55e'; P = '#a3e635'; CY = '#2dd4bf'; TXT = '#f2fdf6'; MUT = '#86a394'; BG = '#040b07'
-MONO = "'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono','Courier New',monospace"
-SANS = "'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif"
+MONO = "'Geist Mono','JetBrains Mono',Consolas,'DejaVu Sans Mono',monospace"
+SANS = "'Geist','Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif"
+DISP = "'Unbounded','Segoe UI Black','Arial Black',sans-serif"
+FONT_DIR = os.environ.get('FONT_DIR', 'node_modules/@fontsource')
+FONT_FILES = {'Unbounded': 'unbounded', 'Geist': 'geist-sans', 'Geist Mono': 'geist-mono'}
 DEFS = (f'<linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{I}"/><stop offset=".5" stop-color="{V}"/><stop offset="1" stop-color="{P}"/></linearGradient>'
         f'<linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".5" stop-color="#fff" stop-opacity=".04"/><stop offset="1" stop-color="{V}" stop-opacity=".35"/></linearGradient>'
         '<linearGradient id="tw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#a7c4b3"/></linearGradient>'
@@ -40,9 +43,30 @@ def esc(s):
     return str(s).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
 
 
+def embed_fonts(body):
+    """subset + inline (woff2/base64) every font/weight the card uses, so it renders the same everywhere"""
+    import base64, html, io, re
+    from fontTools import subset
+    chars = set(html.unescape(''.join(re.findall(r'>([^<>]+)<', body)))) | set(' 0123456789')
+    css = ''
+    for w, fam in sorted(set(re.findall(r"font:(\d+) [\d.]+px '([^']+)'", body))):
+        if fam not in FONT_FILES:
+            continue
+        pkg = FONT_FILES[fam]
+        opts = subset.Options(); opts.flavor = 'woff2'; opts.layout_features = ['*']
+        path = f'{FONT_DIR}/{pkg}/files/{pkg}-latin-{w}-normal.woff2'
+        if not os.path.exists(path):
+            continue
+        font = subset.load_font(path, opts)
+        sub = subset.Subsetter(opts); sub.populate(text=''.join(chars)); sub.subset(font)
+        buf = io.BytesIO(); subset.save_font(font, buf, opts)
+        css += f"@font-face{{font-family:'{fam}';font-weight:{w};src:url(data:font/woff2;base64,{base64.b64encode(buf.getvalue()).decode()}) format('woff2')}}"
+    return f'<style>{css}</style>' if css else ''
+
+
 def svg(w, h, body, defs=DEFS):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" fill="none">'
-            f'<defs>{defs}</defs>{body}</svg>')
+            f'<defs>{embed_fonts(body)}{defs}</defs>{body}</svg>')
 
 
 def icon(name, x, y, size, color=None):
@@ -56,7 +80,7 @@ def card(x, y, w, h, r=20):
 
 
 def label(x, y, t):
-    return f'<text x="{x}" y="{y}" fill="{MUT}" style="font:600 12px {SANS};letter-spacing:2.5px">{esc(t.upper())}</text>'
+    return f'<text x="{x}" y="{y}" fill="{MUT}" style="font:500 11px {MONO};letter-spacing:2.5px">{esc(t.upper())}</text>'
 
 
 # ── static cards ───────────────────────────────────────────────────────
@@ -115,24 +139,24 @@ def hero():
             '<rect x="56" y="62" width="316" height="32" rx="16" fill="#ffffff" fill-opacity=".06" stroke="#fff" stroke-opacity=".14"/>'
             f'<circle cx="74" cy="78" r="4" fill="{P}"><animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/></circle>'
             f'<text x="86" y="83" fill="{TXT}" style="font:600 13px {SANS};letter-spacing:.5px">Available for freelance &amp; collaboration</text>'
-            f'<text x="54" y="160" fill="url(#tw)" style="font:800 64px {SANS};letter-spacing:2px">ZERRATUN</text>'
-            f'<text x="56" y="208" fill="url(#g)" style="font:700 28px {SANS};letter-spacing:-.5px">Built in Turkmenistan.</text>'
-            f'<text x="56" y="244" fill="url(#g)" style="font:700 28px {SANS};letter-spacing:-.5px">Made for every platform.</text>'
+            f'<text x="54" y="160" fill="url(#tw)" style="font:800 58px {DISP};letter-spacing:1px">ZERRATUN</text>'
+            f'<text x="56" y="208" fill="url(#g)" style="font:600 22px {DISP}">Built in Turkmenistan.</text>'
+            f'<text x="56" y="244" fill="url(#g)" style="font:600 22px {DISP}">Made for every platform.</text>'
             f'<text x="56" y="286" fill="{MUT}" style="font:500 16px {SANS}">Cross-platform engineer · React · Ionic · Tauri</text>'
             + chips + g + f'</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="24" stroke="url(#bd)"/>')
     return svg(W, H, body, defs)
 
 
 def section(t):
-    return svg(1000, 56, f'<text x="0" y="36" fill="{TXT}" style="font:700 26px {SANS};letter-spacing:-.5px">{esc(t)}</text>'
+    return svg(1000, 56, f'<text x="0" y="36" fill="{TXT}" style="font:700 22px {DISP}">{esc(t)}</text>'
                          '<rect x="0" y="48" width="44" height="3" rx="1.5" fill="url(#g)"/>')
 
 
 def about():
     W, H = 1000, 300
     b = card(1, 1, W - 2, H - 2, 22) + label(36, 48, 'About me')
-    b += (f'<text x="36" y="94" fill="{TXT}" style="font:700 28px {SANS};letter-spacing:-.5px">Building software for markets</text>'
-          f'<text x="36" y="128" fill="url(#g)" style="font:700 28px {SANS};letter-spacing:-.5px">others overlook.</text>')
+    b += (f'<text x="36" y="94" fill="{TXT}" style="font:600 22px {DISP}">Building software for markets</text>'
+          f'<text x="36" y="128" fill="url(#g)" style="font:600 22px {DISP}">others overlook.</text>')
     for i, t in enumerate(['Based in Mary, Turkmenistan. I design and ship products —', 'HR platforms, POS systems, everyday apps — from one', 'TypeScript codebase to every screen.']):
         b += f'<text x="36" y="{170+i*24}" fill="{MUT}" style="font:500 16px {SANS}">{t}</text>'
     items = [('Web', 'React · Redux · Tailwind', CY), ('Mobile', 'Ionic · Capacitor · RN', '#3ddc84'),
@@ -170,7 +194,7 @@ def project():
     defs = DEFS + '<clipPath id="pc"><rect x="1" y="1" width="998" height="298" rx="22"/></clipPath>'
     b = (f'<g clip-path="url(#pc)">{card(1, 1, W-2, H-2, 22)}<circle cx="850" cy="150" r="140" fill="{I}" opacity=".35" filter="url(#blur)"/></g>'
          f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="22" stroke="url(#g)" stroke-opacity=".6"/>' + label(36, 48, 'Featured project'))
-    b += (f'<text x="36" y="104" fill="url(#tw)" style="font:800 44px {SANS};letter-spacing:-1.5px">MeteoMax</text>'
+    b += (f'<text x="36" y="104" fill="url(#tw)" style="font:800 38px {DISP}">MeteoMax</text>'
           f'<text x="36" y="140" fill="{MUT}" style="font:500 17px {SANS}">A beautiful cross-platform weather app.</text>'
           f'<text x="36" y="164" fill="{MUT}" style="font:500 17px {SANS}">PWA + native Android from a single codebase.</text>')
     x = 36
@@ -205,7 +229,7 @@ def button(ic, t, prim):
 
 
 def footer():
-    return svg(1000, 100, f'<text x="500" y="44" text-anchor="middle" fill="url(#tw)" style="font:700 28px {SANS};letter-spacing:-.5px">Let\'s build something together.</text>'
+    return svg(1000, 100, f'<text x="500" y="44" text-anchor="middle" fill="url(#tw)" style="font:700 22px {DISP}">Let\'s build something together.</text>'
                           f'<text x="500" y="76" text-anchor="middle" fill="{MUT}" style="font:500 15px {SANS}">Open to freelance &amp; collaboration · Mary, Turkmenistan · UTC+5</text>')
 
 
@@ -267,8 +291,8 @@ def stats_card(d):
     b = card(1, 1, 488, 248) + card(511, 1, 488, 248) + label(30, 44, 'Overview') + label(540, 44, 'Languages')
     for i, (k, v, sub) in enumerate(rows):
         x, y = 30 + (i % 2) * 230, 76 + (i // 2) * 84
-        off = len(v) * 25 + 14
-        b += (f'<text x="{x}" y="{y+38}" fill="url(#g)" style="font:800 40px {SANS};letter-spacing:-1px">{esc(v)}</text>'
+        off = len(v) * 31 + 16
+        b += (f'<text x="{x}" y="{y+38}" fill="url(#g)" style="font:800 34px {DISP}">{esc(v)}</text>'
               f'<text x="{x+off}" y="{y+20}" fill="{TXT}" style="font:600 14px {SANS}">{esc(k)}</text>'
               f'<text x="{x+off}" y="{y+38}" fill="{MUT}" style="font:500 12px {SANS}">{esc(sub)}</text>')
     x = 540.0
