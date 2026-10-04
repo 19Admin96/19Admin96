@@ -214,7 +214,7 @@ QUERY = '''query($login:String!,$from:DateTime!,$to:DateTime!){
   user(login:$login){
     repositories(ownerAffiliations:OWNER,isFork:false,privacy:PUBLIC,first:100){
       totalCount
-      nodes{ languages(first:10,orderBy:{field:SIZE,direction:DESC}){ edges{ size node{ name color } } } }
+      nodes{ name languages(first:10,orderBy:{field:SIZE,direction:DESC}){ edges{ size node{ name color } } } }
     }
     contributionsCollection(from:$from,to:$to){
       contributionCalendar{ totalContributions weeks{ contributionDays{ date contributionCount } } }
@@ -234,6 +234,8 @@ def fetch():
     u = data['data']['user']
     langs = {}
     for repo in u['repositories']['nodes']:
+        if repo['name'] == LOGIN:  # skip the profile repo itself
+            continue
         for e in repo['languages']['edges']:
             n = e['node']['name']
             langs.setdefault(n, [0, e['node']['color'] or '#8b949e'])
